@@ -27,5 +27,5 @@ Run the follwing command
 ```
 
 
-#${\color{blue}./reddit_cli.py \space \color{lightblue}topic \space \color{green}--filter="filter"}$
+python reddit_cli.py <span style="color:blue;">interest</span> --filter="<span style="green">filter</span>"
 
