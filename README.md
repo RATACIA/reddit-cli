@@ -10,7 +10,7 @@ Browse posts from any subreddit.
 
 Filter posts by hot, new, top, or rising.
 
-View post details and the top 5 comments.
+View post details and the top 10 comments.
 
 Installation
 
