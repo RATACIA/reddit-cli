@@ -11,13 +11,13 @@ def browse(subreddit, filter):
     """Browse Reddit posts and view details with comments."""
     url = f"{BASE_URL}/r/{subreddit}/{filter}.json"
     response = requests.get(url, headers={"User-Agent": "cli-tool"})
+    # list posts
     if response.status_code == 200:
         posts = response.json()["data"]["children"]
         for idx, post in enumerate(posts):
             data = post["data"]
             click.echo(f"{idx + 1}. {data['title']} ({data['url']})")
         
-        # Prompt the user to select a post
         selected = click.prompt(
             "Enter the number of the post to view its details (or 0 to exit)",
             type=int,
@@ -42,8 +42,8 @@ def view_post_details(post_data):
     permalink = post_data["permalink"]
 
     click.echo(f"\n{post_title}\n{post_url}\n{'=' * 50}")
-
-    # Fetch comments
+    # show comments
+    
     comments_url = f"{BASE_URL}{permalink}.json"
     response = requests.get(comments_url, headers={"User-Agent": "cli-tool"})
     if response.status_code == 200:
