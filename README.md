@@ -27,5 +27,5 @@ Run the follwing command
 ```
 
 
-$${\color{blue}./reddit_cli.py \color{lightblue}topic \color{green}--filter="filter"}$$
+${\color{blue}./reddit_cli.py \color{lightblue}topic \color{green}--filter="filter"}$
 
