@@ -27,5 +27,5 @@ Run the follwing command
 ```
 
 
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+$${\color{blue}./reddit_cli.py \color{lightblue}topic \color{green}--filter="filter"}$$
 
