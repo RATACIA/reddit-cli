@@ -10,7 +10,7 @@ Browse posts from any subreddit.
 
 Filter posts by hot, new, top, or rising.
 
-View post details and the top 5 comments.
+View post details and the top 10 comments.
 
 Installation
 
@@ -24,4 +24,8 @@ Run the follwing command
 
 ```
 ./reddit_cli.py programming --filter="new"
+```
+
+```
+$${\color{blue}./reddit_cli.py}$$ $${\color{red}topic}$$ 	$${\color{green}--filter="filter"}$$
 ```
